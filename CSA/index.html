@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSA - Justificativa de Faltas</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+
+    <aside class="aba">
+        <h2>SUAP</h2>
+        <ul>
+            <li><a href="#">Início</a></li>
+            <li><a href="#">Documentos/Processos</a></li>
+            <li><a href="#">Ensino</a></li>
+            <li><a href="#">Pesquisa</a></li>
+            <li><a href="#">Tec. da Informação</a></li>
+            <li><a href="#">Atividades Estudantis</a></li>
+            <li><a href="#">Comunicação Social</a></li>
+            <li><a href="#">Des. Institucional</a></li>
+        </ul>
+    </aside>
+
+    <!-- 2. Área de Conteúdo (Lado Direito) -->
+    <main class="conteudo-principal">
+        <!-- Card Branco com Sombra -->
+        <div class="container">
+            <p class="breadcrumb">Início &rsaquo; Agendamentos &rsaquo; <span>Justificativa de faltas</span></p>
+            
+            <h1>Justificativa de Faltas</h1>
+            
+            <p class="descricao">
+                Envie sua justificativa de ausência anexando o atestado médico ou outro comprovante válido. 
+                A solicitação será analisada pela coordenação do curso.
+            </p>
+
+            <!-- Formulário de Envio -->
+            <form class="form-justificativa">
+                <div class="campo">
+                    <label for="data">Data:</label>
+                    <input type="date" id="data" name="data">
+                </div>
+                <div class="campo">
+                    <label for="motivo">Motivo:</label>
+                    
+               
+                    <select name="Motivo" id="motivo">
+                        <option value="consulta">Consulta médica</option>
+                        <option value="compromisso">Compromisso pessoal</option>
+                        <option value="outro">Outro(colocar na descrição)</option>
+                    </select>
+                 </div>
+
+                <div class="campo">
+                    <label for="descricao">Descrição:</label>
+                    <textarea id="descricao" name="descricao" rows="4" placeholder="Descreva brevemente o motivo..."></textarea>
+                </div>
+
+                <div class="campo">
+                    <label for="comprovante">Anexar comprovante (PDF, JPG ou PNG):</label>
+                    <input type="file" id="comprovante" name="comprovante">
+                </div>
+
+                <button type="submit" class="btn-enviar">Enviar Solicitação</button>
+            </form>
+        </div>
+        <section nema="orientacao">
+            <h2>Orientações</h2>
+            <ul>
+                <li>é necessario comprovante para a justificativa</li>
+                <li>o documento precisa estar legivel</li>
+                
+            </ul>
+        </section>
+
+    </main>
+
+</body>
+</html>

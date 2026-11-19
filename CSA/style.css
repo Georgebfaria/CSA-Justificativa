@@ -1,0 +1,166 @@
+/* Reseta margens e padding padrão do navegador */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html, body {
+    height: 100%;
+}
+
+/* Configura o layout lado a lado */
+body {
+    display: flex;
+    min-height: 100vh;
+    background-color: #f0f2f5; /* Fundo cinza da página */
+}
+
+/* --- 1. BARRA LATERAL VERDE (Esquerda / Altura Total) --- */
+.aba {
+    width: 250px;
+    background-color: #006600; /* Verde do SUAP */
+    color: white;
+    padding: 25px 20px;
+    min-height: 100vh; /* Ocupa 100% da altura da tela */
+    flex-shrink: 0; /* Impede a barra de encolher */
+}
+
+.aba h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.aba ul {
+    list-style: none;
+}
+
+.aba ul li {
+    margin-bottom: 10px;
+}
+
+.aba ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.95rem;
+    display: block;
+    padding: 8px 10px;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+}
+
+.aba ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* --- 2. ÁREA PRINCIPAL DA DIREITA --- */
+.conteudo-principal {
+    flex: 1;
+    padding: 40px;
+    display: flex;
+    justify-content: left;
+    align-items: flex-start;
+}
+
+/* Card Branco com Sombreamento */
+.container {
+  
+    background-color: #ffffff;
+    width: 60%;
+    min-height: calc(100vh - 40px);
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    
+    display: flex;
+    flex-direction: column;
+}
+.orientacao {
+    background-color: #ffffff;
+    width: 30%; /* Defina uma largura maior como 80% ou 100% se quiser que ela ocupe mais espaço */
+    min-height: 40px;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-direction: column;
+    
+    /* Garante o alinhamento à esquerda */
+    margin-left: 2rem;
+    align-self: flex-start; /* Se o pai for flex, força esta caixa a ir para a esquerda */
+}
+/* Textos e Navegação */
+.breadcrumb {
+    font-size: 0.85rem;
+    color: #6c757d;
+    margin-bottom: 15px;
+}
+
+.breadcrumb span {
+    color: #0056b3;
+    font-weight: 600;
+}
+
+h1 {
+    font-size: 1.75rem;
+    color: #1a1a1a;
+    margin-bottom: 12px;
+}
+
+.descricao {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: #555555;
+    margin-bottom: 25px;
+}
+
+/* Formulário */
+.form-justificativa {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.campo label {
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: #333333;
+}
+
+textarea, input[type="file"] {
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 6px;
+    font-size: 0.95rem;
+}
+
+textarea:focus {
+    border-color: #006600;
+    outline: none;
+}
+
+/* Botão de Envio */
+.btn-enviar {
+    background-color: #006600;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.btn-enviar:hover {
+    background-color: #004d00;
+}
